@@ -1,5 +1,6 @@
 # Model Prediction
 This is a project for PyCon tutorial "[Building a Model Prediction Server](https://us.pycon.org/2023/schedule/presentation/79/)"
+Slides for this can be found [HERE](https://eswan18.github.io/sklearn-api-deploy-slides/sklearn-api-deploy.slides.html#/77).
 
 This project uses FastAPI.
 
