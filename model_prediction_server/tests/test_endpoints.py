@@ -19,3 +19,17 @@ def test_predict(client: TestClient):
         json=json_post_dict
     )
     assert response.status_code == 201
+
+def test_virginica(client: TestClient):
+    json_post_dict = {
+        "petal_length": 7,
+        "petal_width": 5,
+        "sepal_length": 4,
+        "sepal_width": 1
+    }
+    response = client.post(
+        '/predict',
+        json=json_post_dict
+    )
+    assert response.status_code == 201
+    assert response.json()["flower_type"] == 'virginica'
