@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pycon-2023"
+version = "0.1.0"
+description = "Stuff / tools used for learning exercises at PyCon '23 Conference"
+authors = ["verdanceluke <luke@verdance.co>"]
+readme = "README.md"
+packages = [{include = "pycon_2023"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+bpython = "0.24"
+click = "8.1"
+fire = "0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
